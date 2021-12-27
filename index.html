@@ -1,13 +1,28 @@
-
+<style>
+    @media only screen and (min-width: 600px){
+        span {
+            font-size: 120px ;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        span {
+            font-size: smaller !important;
+        }
+}
+    
+</style>
 <body style="background-image: url(./812847.jpg); background-size: cover;">
     
+    <div style="width: 100%;  ">
 
-<div id="relogio" style="background-color: black; color: white; width: 50%; height: 23%; text-align: center; font-size: 120px; margin: 10px auto 10px auto; margin-top: 20%;">
-    <span id="hours" >19</span> :
-    <span id="minutes">57</span> :
+<div class="watch" id="relogio" style="background-color: black; color: white; width: 50%; height: 23%; text-align: center; margin: 10px auto 10px auto; margin-top: 20%;">
+    <span id="hours" >19</span><span> :</span>
+    <span id="minutes">57</span><span> :</span>
     <span id="seconds">25</span>
 </div>
 
+</div>
 <script>
 
 
