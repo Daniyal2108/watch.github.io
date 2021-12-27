@@ -1,0 +1,39 @@
+
+<body style="background-image: url(./812847.jpg); background-size: cover;">
+    
+
+<div id="relogio" style="background-color: black; color: white; width: 50%; height: 23%; text-align: center; font-size: 120px; margin: 10px auto 10px auto; margin-top: 20%;">
+    <span id="hours" >19</span> :
+    <span id="minutes">57</span> :
+    <span id="seconds">25</span>
+</div>
+
+<script>
+
+
+function leading_zero(number) {
+    if( number < 10 ){
+        return "0" + number.toString()
+    }   else {
+        return number.toString();
+    }
+}   
+
+window.setInterval(function (){
+
+    var date = new Date();
+    var getHours = date.getHours();
+    var getMinutes = date.getMinutes();
+    var getSeconds = date.getSeconds();
+    var clockHours = document.getElementById("hours");
+    var clockMinutes = document.getElementById("minutes");
+    var clockSeconds = document.getElementById("seconds");
+    clockHours.innerHTML = leading_zero(getHours);
+    clockMinutes.innerHTML = leading_zero(getMinutes);
+    clockSeconds.innerHTML = leading_zero(getSeconds);
+
+}, 1000) 
+
+</script>
+
+</body>
